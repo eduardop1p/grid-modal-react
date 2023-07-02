@@ -1,12 +1,18 @@
 /* eslint-disable react/no-danger-with-children */
+import { ReactNode } from 'react';
 
 import { Container } from './styled';
 
 interface Props {
-  html: string;
+  children?: ReactNode;
+  html?: string;
 }
 
-export const TextComponent = ({ html }: Props) => {
+export const TextComponent = ({ html, children }: Props) => {
   // a prop dangerouslySetInnerHTML do component styled vai injetar uma string html nela
-  return <Container dangerouslySetInnerHTML={{ __html: html }} />;
+  return html ? (
+    <Container dangerouslySetInnerHTML={{ __html: html }} />
+  ) : (
+    <Container>{children}</Container>
+  );
 };
