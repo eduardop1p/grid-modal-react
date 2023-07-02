@@ -2,13 +2,12 @@ import styled, { css } from 'styled-components';
 
 import { Container as SectionContainer } from '../section-container/styled';
 import { Title } from '../heading/styled';
-import { DefaultTheme } from 'styled-components/dist/types';
 
 interface Props {
   $visible: boolean;
 }
 
-const menuVisible = (theme: DefaultTheme) => css`
+const menuVisible = () => css`
   visibility: visible;
   opacity: 1;
 `;
@@ -40,7 +39,7 @@ export const Container = styled.div<Props>`
       height: 100vh;
       visibility: hidden;
       opacity: 0;
-      ${$visible && menuVisible(theme)}
+      ${$visible && menuVisible()}
 
       & > ${SectionContainer} {
         display: grid;

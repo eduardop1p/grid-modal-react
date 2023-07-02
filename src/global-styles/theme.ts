@@ -6,7 +6,7 @@ export const myTheme: Readonly<DefaultTheme> = {
     secondaryColor: '#dc143c',
     white: '#fff',
     mediumGray: '#ddd',
-    blackTransparent: 'rgba(0,0,0,0.9)'
+    blackTransparent: 'rgba(0,0,0,0.9)',
   },
   font: {
     family: {
@@ -16,7 +16,7 @@ export const myTheme: Readonly<DefaultTheme> = {
     sizes: {
       xsmal: '8rem',
       small: '1.6rem',
-      medium: '2.4rem', 
+      medium: '2.4rem',
       large: '3.2rem',
       xlarge: '4.0rem',
       xxlarge: '4.8rem',

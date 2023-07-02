@@ -1,12 +1,9 @@
-import { ReactNode } from 'react';
-
 import { Container, TextContainer, ImageContainer, Image } from './styled';
 import { SectionBackground } from '../section-background';
 import { Heading } from '../heading';
 import { TextComponent } from '../text-component';
 
 interface Props {
-  children?: ReactNode;
   title: string;
   text: string;
   srcImg: string;
@@ -14,7 +11,6 @@ interface Props {
 }
 
 export const GridTwoColumn = ({
-  children,
   title,
   text,
   srcImg,

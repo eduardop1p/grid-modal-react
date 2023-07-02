@@ -1,4 +1,4 @@
-import { ReactNode, useState, useRef, MouseEvent } from 'react';
+import { useState, MouseEvent } from 'react';
 
 import { Container, Grid, GridElement, Image } from './styled';
 import { SectionBackground } from '../section-background';
@@ -7,7 +7,6 @@ import { TextComponent } from '../text-component';
 import { Modal } from './modal';
 
 interface Props {
-  children?: ReactNode;
   title: string;
   description: string;
   background?: boolean;
@@ -23,7 +22,6 @@ export interface ImgProps {
 }
 
 export const GridImage = ({
-  children,
   background = false,
   title,
   description,

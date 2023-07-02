@@ -1,5 +1,4 @@
 /* eslint-disable react/no-danger-with-children */
-import { ReactNode } from 'react';
 
 import { Container } from './styled';
 

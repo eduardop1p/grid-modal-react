@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import { Container, Grid, GridElement } from './styled';
 import { SectionBackground } from '../section-background';
 import { Heading } from '../heading';
@@ -10,13 +8,11 @@ interface TitleDescription {
   description: string;
 }
 interface Props extends TitleDescription {
-  children?: ReactNode;
   background?: boolean;
   grid: TitleDescription[];
 }
 
 export const GridText = ({
-  children,
   title,
   description,
   background = false,

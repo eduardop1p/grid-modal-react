@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 
@@ -8,12 +8,11 @@ import { LogoLink } from '../logo-link';
 import { NavLink } from '../nav-links';
 
 interface Props {
-  children?: ReactNode;
   links?: string[];
   logoData: { link: string; text: string; srcImg?: string };
 }
 
-export const Menu = ({ children, links = [], logoData }: Props) => {
+export const Menu = ({ links = [], logoData }: Props) => {
   const [visible, setVisible] = useState(false);
 
   return (
